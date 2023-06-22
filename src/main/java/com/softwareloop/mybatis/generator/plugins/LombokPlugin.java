@@ -177,9 +177,10 @@ public class LombokPlugin extends PluginAdapter {
                 }
                 String propertyValue = properties.getProperty(propertyName);
                 annotation.appendOptions(propertyName, propertyValue);
-                annotations.add(annotation);
-                annotations.addAll(Annotations.getDependencies(annotation));
             }
+            
+            annotations.add(annotation);
+            annotations.addAll(Annotations.getDependencies(annotation));
         }
     }
 
