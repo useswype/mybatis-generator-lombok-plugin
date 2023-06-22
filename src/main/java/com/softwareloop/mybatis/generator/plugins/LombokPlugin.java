@@ -202,7 +202,8 @@ public class LombokPlugin extends PluginAdapter {
         ALL_ARGS_CONSTRUCTOR("allArgsConstructor", "@AllArgsConstructor", "lombok.AllArgsConstructor"),
         NO_ARGS_CONSTRUCTOR("noArgsConstructor", "@NoArgsConstructor", "lombok.NoArgsConstructor"),
         ACCESSORS("accessors", "@Accessors", "lombok.experimental.Accessors"),
-        TO_STRING("toString", "@ToString", "lombok.ToString");
+        TO_STRING("toString", "@ToString", "lombok.ToString"),
+        EQUALS_AND_HASH_CODE("equalsAndHashCode", "@EqualsAndHashCode", "lombok.EqualsAndHashCode");
 
 
         private final String paramName;
